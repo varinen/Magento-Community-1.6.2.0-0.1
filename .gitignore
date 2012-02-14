@@ -1,1 +1,8 @@
-/media/*
+/var
+/media
+local.xml
+/gateway
+.smi
+robots.txt
+/nbproject
+sitemap.xml
