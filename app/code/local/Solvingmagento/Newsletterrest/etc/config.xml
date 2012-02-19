@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Solvingmagento_Newsletterrest>
+            <version>0.1.0</version>
+        </Solvingmagento_Newsletterrest>
+    </modules>
+    <global>
+        <helpers>
+            <newsletterrest>
+                <class>Solvingmagento_Newsletterrest_Helper</class>
+            </newsletterrest>
+        </helpers>
+        <resources>
+            <newsletterrest_setup>
+                <setup>
+                    <module>Solvingmagento_Newsletterrest_Helper</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </newsletterrest_setup>
+        </resources>
+        <models>
+            <newsletterrest>
+                <class>Solvingmagento_Newsletterrest_Model</class>
+            </newsletterrest>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <newsletterrest>
+                <use>standard</use>
+                <args>
+                    <module>Solvingmagento_Newsletterrest</module>
+                    <frontName>newsletterrest</frontName>
+                </args>
+            </newsletterrest>
+        </routers>
+    </frontend>
+</config>
