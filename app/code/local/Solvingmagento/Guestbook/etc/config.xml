@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <phpunit>
+        <suite>
+            <modules>
+                <Solvingmagento_Guestbook />
+            </modules>
+        </suite>
+    </phpunit>
+    <modules>
+        <Solvingmagento_Guestbook>
+            <version>1.0.0</version>
+        </Solvingmagento_Guestbook>
+    </modules>
+    <global>
+        <models>
+            <solvingmagento_guestbook>
+                <class>Solvingmagento_Guestbook_Model</class>
+                <resourceModel>solvingmagento_guestbook_resource</resourceModel>
+            </solvingmagento_guestbook>
+            <solvingmagento_guestbook_resource>
+                <class>Solvingmagento_Guestbook_Model_Resource</class>
+                <entities>
+                    <entry>
+                        <table>solvingmagento_guestbook_entry</table>
+                    </entry>
+                </entities>
+            </solvingmagento_guestbook_resource>
+        </models>
+        <helpers>
+            <solvingmagento_guestbook>
+                <class>Solvingmagento_Guestbook_Helper</class>
+            </solvingmagento_guestbook>
+        </helpers>
+        <resources>
+            <solvingmagento_guestbook_setup>
+                <setup>
+                    <module>Solvingmagento_Guestbook</module>
+                </setup>
+            </solvingmagento_guestbook_setup>
+        </resources>
+    </global>
+</config>

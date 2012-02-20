@@ -1,0 +1,15 @@
+- 
+  - wrong_name
+  - name: null
+    email: oleg.ishenko@solvingmagento.com
+    comment: test
+-
+  - wrong_email
+  - name: Oleg Ishenko
+    email: oleg.ishenkosolvingmagento.com
+    comment: test
+-
+  - ok
+  - name: Oleg Ishenko
+    email: oleg.ishenko@solvingmagento.com
+    comment: test
