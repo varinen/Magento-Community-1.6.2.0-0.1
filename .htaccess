@@ -140,10 +140,17 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-l
 
+## never rewrite for URI beginning with admin
+   #RewriteCond %{REQUEST_URI} !^/admin.*
+
 ############################################
 ## rewrite everything else to index.php
 
     RewriteRule .* index.php [L]
+
+## externally rewrite index.php/admin to admin
+    RewriteCond %{REQUEST_URI} ^/index.php/admin.*$
+    RewriteRule ^index.php/admin(.*) /admin$1 [R]
 
 </IfModule>
 
